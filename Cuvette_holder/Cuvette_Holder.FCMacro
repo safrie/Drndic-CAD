@@ -1,0 +1,154 @@
+import FreeCAD
+import Part
+from FreeCAD import Base
+import numpy as np
+
+doc = FreeCAD.ActiveDocument
+if doc is not None:
+	for obj in doc.Objects:
+		doc.removeObject(obj.Name)
+
+# Cuvette Dimensions:
+# 12.5 mm x 12.5 mm x 45 mm LxWxH
+
+z_ax = Base.Vector(0, 0, 1)
+
+parts = []
+cuts = []
+
+# Stage
+# stage = App.ActiveDocument.addObject("Part::Feature", "stage")
+stageL = 75.0
+stageW = 75.0
+stageH = 25.0
+stagePoint = Base.Vector(-stageL/2, -stageW/2, -stageH/2)
+stage = doc.addObject("Part::Feature", "stage")
+stage.Shape = Part.makeBox(stageL, stageW, stageH, stagePoint)
+stage.ViewObject.Visibility = False
+
+# Cuvette
+#cuvette = doc.addObject("Part::Feature", "cuvette")
+cuvL = 12.5
+cuvW = 12.5
+cuvH = 45
+depressionH = 6.5
+cuvPoint = Base.Vector(-cuvL/2, -cuvW/2, stageH/2 - depressionH)
+#cuvette.Shape = Part.makeBox(cuvL, cuvW, cuvH, cuvPoint)
+#cuv_color = np.array([35, 219, 219])
+#norm = np.linalg.norm(cuv_color)
+#cuv_color = tuple(cuv_color/norm)
+#cuvette.ViewObject.ShapeColor = cuv_color
+
+cuvCutL = 13.5
+cuvCutW = 13.5
+cuvCutPoint = Base.Vector(-cuvCutL/2, -cuvCutW/2, stageH/2 - depressionH)
+cuvCut = doc.addObject("Part::Feature", "cuvCut")
+cuvCut.Shape = Part.makeBox(cuvCutL, cuvCutW, cuvH, cuvCutPoint)
+cuvCut.ViewObject.Visibility = False
+
+
+# Pillar
+# Pillar height = 23.0 mm
+# Pillar L/W = 6.25 mm
+
+upperL = 2 * cuvL
+upperW = 2 * cuvW
+
+pilL = upperL/4
+pilW = upperW/4
+pilH = 23
+pilPoint = Base.Vector(-upperL/2, -upperW/2, stageH/2)
+pillar = doc.addObject("Part::Feature", "pillar")
+pillar.Shape = Part.makeBox(pilL, pilW, pilH, pilPoint)
+
+# Bridge
+bridL = upperL/2
+bridW = upperW/2 - cuvW/2
+bridH = 10
+
+bridges = []
+for i in range(0, 2):
+	name = "bridge" + str(i)
+	bridge = doc.addObject("Part::Feature", name)
+	bridges.append(bridge)
+
+bridgeOrigin = Base.Vector(0, 0, pilH)
+b = Part.makeBox(bridL, bridW, bridH, bridgeOrigin)
+bCenter = b.CenterOfMass
+b = [b, b.copy()]
+b[1].rotate(bCenter, z_ax, 90)
+
+moves = [Base.Vector(0, 0, 0), Base.Vector(-bridW/2, bridW/2, 0)]
+for i in range(len(b)):
+	b[i].translate(pilPoint + moves[i])
+	bridges[i].Shape = b[i]
+
+# Chamfers
+chmfrD = bridL/2
+edges = [(8, chmfrD, chmfrD) for i in range(len(bridges))]
+print("chamfering")
+chmfrs = []
+for i in range(len(bridges)):
+	name = "chamfer " + str(i)
+	chamfer = doc.addObject("Part::Chamfer", name)
+	chamfer.Base = bridges[i]
+	chamfer.Edges = [edges[i]]
+	chmfrs.append(chamfer)
+	bridges[i].ViewObject.Visibility = False
+
+# Join Bridges
+bJoined = doc.addObject("Part::Fuse", "bridges")
+bJoined.Base = chmfrs[0]
+bJoined.Tool = chmfrs[1]
+
+# Join Pillar
+pJoined = doc.addObject("Part::Fuse", "Pillar")
+pJoined.Base = bJoined
+pJoined.Tool = pillar
+pJoined.Refine = True
+
+# Mirror in yz plane and connect
+yzMirror = doc.addObject("Part::Mirroring", "yz Mirror")
+yzMirror.Source = pJoined
+yzMirror.Normal = (1, 0, 0)
+yzMirror.Base = (0, 0, 0)
+
+front = doc.addObject("Part::Fuse", "front")
+front.Base = pJoined
+front.Tool = yzMirror
+front.Refine = True
+
+# Mirror in the xz plane and connect
+xzMirror = doc.addObject("Part::Mirroring", "xz Mirror")
+xzMirror.Source = front
+xzMirror.Normal = (0, 1, 0)
+xzMirror.Base = (0, 0, 0)
+
+top = doc.addObject("Part::Fuse", "top")
+top.Base = front
+top.Tool = xzMirror
+top.Refine = True
+
+# Connect to the stage
+holder = doc.addObject("Part::Fuse", "holder")
+holder.Base = stage
+holder.Tool = top
+
+# Cutout for the cuvette
+final = doc.addObject("Part::Cut", "cuvette holder")
+final.Base = holder
+final.Tool = cuvCut
+
+
+# Final
+#basic_holder = App.ActiveDocument.addObject("Part::Feature", "holder")
+#basic_holder.Shape = stage.cut(cuvette.Shape)
+#basic_holder.Shape = stage.cut(cuvCut)
+#basic_holder.Shape = basic_holder.Shape.cut(cuvCut)
+#basic_holder.Shape = basic_holder.Shape.removeSplitter()
+#basic_holder.ViewObject.hide()
+#Part.show(box, "tool")
+#Part.show(pillarTool, "tool")
+#Part.show(cuvCut, "cuvCut")
+
+App.ActiveDocument.recompute()
