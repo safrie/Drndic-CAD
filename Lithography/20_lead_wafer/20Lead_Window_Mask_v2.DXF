@@ -1,0 +1,2536 @@
+  0
+SECTION
+  2
+HEADER
+  9
+$EXTMIN
+ 10
+-1150
+ 20
+-1900
+  9
+$EXTMAX
+ 10
+106900
+ 20
+99400
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+LAYER
+ 70
+   1
+  0
+LAYER
+  2
+Window_Single
+ 70
+    0
+ 62
+    102
+  6
+CONTINUOUS
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+BLOCKS
+  0
+BLOCK
+  8
+0
+  2
+Window_Single
+ 70
+64
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+1900
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+1850
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1000
+ 20
+1850
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1000
+ 20
+1900
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+1900
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+-1850
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+-1900
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1000
+ 20
+-1900
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1000
+ 20
+-1850
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+-1850
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-170
+ 20
+170
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-170
+ 20
+-170
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+170
+ 20
+-170
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+170
+ 20
+170
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-170
+ 20
+170
+  0
+SEQEND
+  0
+ENDBLK
+  8
+0
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+1900
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+1850
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1000
+ 20
+1850
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1000
+ 20
+1900
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+1900
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1150
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+-1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1150
+ 20
+1750
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1100
+ 20
+1750
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+-1850
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+-1900
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1000
+ 20
+-1900
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+1000
+ 20
+-1850
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-1000
+ 20
+-1850
+  0
+SEQEND
+  0
+POLYLINE
+100
+AcDb2dPolyline
+  8
+Window_Single
+ 66
+   1
+ 70
+   1
+ 40
+0.0
+ 41
+0.0
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+175
+ 20
+175
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-175
+ 20
+175
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+-175
+ 20
+-175
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+175
+ 20
+-175
+  0
+VERTEX
+100
+AcDbVertex
+100
+AcDb2dVertex
+  8
+Window_Single
+ 10
+175
+ 20
+175
+  0
+SEQEND
+  0
+INSERT
+100
+AcDbBlockReference
+  8
+Pads
+  2
+Window_Single
+ 10
+0
+ 20
+0
+ 30
+   0
+ 41
+1
+ 42
+1
+ 43
+1
+ 50
+0
+ 70
+48
+ 71
+27
+ 44
+2250
+ 45
+3750
+  0
+ENDSEC
+  0
+EOF
