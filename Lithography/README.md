@@ -1,1 +1,3 @@
-This folder contains the mask patterns I made for optical lithography on 4" wafers.
+This folder contains the mask patterns I made for optical lithography on 4" wafers and my e-beam lithography dose test pattern.
+
+20, 16, and 12-lead masks: These masks are designed for producing in-situ TEM chips from 4" wafers. The chips are 3mm x 4mm so that they fit in the 8-lead Hummingbird transport holder. The metal deposition mask patterns have more leads than necessary for a Hall bar for ease of writing e-beam leads on at times oddly-shaped 2d materials and large contact pads for ease of wire-bonding. The backside mask paterns are for producing electron-transparent TEM windows on 200-micron <100> Si wafers with outer LPCVD silicon nitride layers.
