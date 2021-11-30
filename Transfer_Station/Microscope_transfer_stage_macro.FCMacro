@@ -1,0 +1,71 @@
+import FreeCAD
+import math
+import numpy as np
+from FreeCAD import Base
+# Units in inches, converted to mm for internal workings via multiplication
+x = 25.4
+# Basic Box
+stageL = 2.25*x
+stageW = 3.0*x
+stageH = 1.325*x
+stagePoint = Base.Vector(-stageL/2, -stageW/2, -stageH/2)
+basic_stage = Part.makeBox(stageL, stageW, stageH, stagePoint)
+
+# Cut 1
+firstcutL = 1.65*x
+firstcutW = 2.00*x
+firstcutH = 1.125*x
+firstcutPoint = Base.Vector(stageL/2-firstcutL, -firstcutW/2, stageH/2-firstcutH)
+firstcut = Part.makeBox(firstcutL, firstcutW, firstcutH, firstcutPoint)
+cuts = [firstcut]
+
+# Cut 2
+seccutL = 2.00*x
+seccutW = 1.00*x
+seccutH = firstcutH
+seccutPoint = Base.Vector(stageL/2-seccutL, -seccutW/2, stageH/2-seccutH)
+seccut = Part.makeBox(seccutL, seccutW, seccutH, seccutPoint)
+cuts += [seccut]
+
+# Cut 3
+thirdcutV1 = Base.Vector(stageL/2, -stageW/2, stageH/2-firstcutH)
+thirdcutV2 = Base.Vector(stageL/2, stageW/2, stageH/2-firstcutH)
+thirdcutV3 = Base.Vector(stageL/2-firstcutL, -stageW/2, stageH/2)
+thirdcutV4 = Base.Vector(stageL/2-firstcutL, stageW/2, stageH/2)
+thirdcutV5 = Base.Vector(stageL/2, -stageW/2, stageH/2)
+thirdcutV6 = Base.Vector(stageL/2, -stageW/2, stageH/2)
+
+
+thirdcutW1 = Part.makePolygon([thirdcutV1, thirdcutV2, thirdcutV4, thirdcutV3, thirdcutV1])
+thirdcutF1 = Part.Face(thirdcutW1)
+thirdcutL = 2.00*x
+thirdcutW = 3.00*x
+thirdcutH = 5.00*x
+thirdcutTheta = np.arctan(firstcutL/firstcutH)
+thirdcutPhi = math.pi/2-thirdcutTheta
+thirdcutDir = Base.Vector(120*np.sin(thirdcutPhi), 0, 120*np.cos(thirdcutPhi))
+thirdcut = thirdcutF1.extrude(thirdcutDir)
+cuts += [thirdcut]
+
+# Screw Holes
+holeR = 0.10/2*x
+holeCC = 0.75*x
+hole1Point = Base.Vector(-stageL/2, 0, stageH/2-0.25*x)
+hole2Point = Base.Vector(-stageL/2, 0, stageH/2-0.25*x-holeCC)
+holeDir = Base.Vector(1, 0, 0)
+hole1 = Part.makeCylinder(holeR, 50, hole1Point, holeDir)
+hole2 = Part.makeCylinder(holeR, 50, hole2Point, holeDir)
+cuts += [hole1, hole2]
+
+# Bolt Holes 
+boltR = 0.25*x/2
+boltCC = 1.00*x
+bolt1Point = Base.Vector(stageL/2 - 0.50*x, 0, -stageH/2-10)
+bolt2Point = bolt1Point + Base.Vector(-boltCC, 0, 0)
+bolt1 = Part.makeCylinder(boltR, 50, bolt1Point)
+bolt2 = Part.makeCylinder(boltR, 50, bolt2Point)
+cuts += [bolt1, bolt2]
+
+full_stage = basic_stage.cut([i for i in cuts]).removeSplitter()
+Part.show(full_stage, "stage")
+

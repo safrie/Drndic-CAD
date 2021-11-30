@@ -1,0 +1,59 @@
+import FreeCAD
+import math
+import numpy as np
+from FreeCAD import Base
+
+x = 25.4 # Unit converter from inches to mm for FreeCAD internal processing
+cuts = []
+
+# Basic box
+stageL = 3.75*x
+stageW = 3.25*x
+stageH = 0.5*x
+stagePoint = Base.Vector(-stageL/2, -stageW/2, -stageH/2)
+stage = Part.makeBox(stageL, stageW, stageH, stagePoint)
+
+# Depression
+depressionL = 2.125*x
+depressionW = 2.55*x
+depressionH = 0.25*x
+depressionPoint = Base.Vector(-stageL/2+0.525*x, -depressionW/2, stageH/2-depressionH)
+depression = Part.makeBox(depressionL, depressionW, depressionH, depressionPoint)
+cuts += [depression]
+
+# Notch 1
+notch1L = stageL-depressionL-0.525*x
+notch1W = 1.0*x
+notch1H = stageH
+notch1Point = Base.Vector(stageL/2-notch1L, -notch1W/2, -notch1H/2)
+notch1 = Part.makeBox(notch1L, notch1W, notch1H, notch1Point)
+cuts += [notch1]
+
+# Notches 2 and 3
+notch23L = 0.25*x
+notch23W = 0.675*x
+notch23H = stageH
+notch2Point = Base.Vector(-stageL/2+1.28*x, -stageW/2, -notch23H/2)
+notch3Point = notch2Point + Base.Vector(0, stageW-notch23W, 0)
+notch2 = Part.makeBox(notch23L, notch23W, notch23H, notch2Point)
+notch3 = Part.makeBox(notch23L, notch23W, notch23H, notch3Point)
+cuts += [notch2, notch3]
+
+# Big screw holes
+bigScrewR = 0.25*x/2
+bigScrewH = 3.0*x
+bigScrewCCVecs = [Base.Vector(3.0*x, 0, 0), Base.Vector(0, 2.0*x, 0), Base.Vector(3.0*x, 2.0*x, 0)]
+bigScrewPoints = [Base.Vector(-stageL/2+0.25*x, -stageW/2+0.625*x, 0)]
+bigScrewPoints += [bigScrewPoints[0] + vec for vec in bigScrewCCVecs] 
+cuts += [Part.makeCylinder(bigScrewR, bigScrewH, point) for point in bigScrewPoints]
+
+# Small screw holes
+smallScrewR = 0.05*x
+smallScrewH = 3.0*x
+smallScrewCCVecs = [Base.Vector(1.25*x, 0, 0), Base.Vector(0, 1.75*x, 0), Base.Vector(1.25*x, 1.75*x, 0)]
+smallScrewPoints = [Base.Vector(-stageL/2+0.75*x, -stageW/2+0.75*x, 0)]
+smallScrewPoints += [smallScrewPoints[0] + vec for vec in smallScrewCCVecs]
+cuts += [Part.makeCylinder(smallScrewR, smallScrewH, point) for point in smallScrewPoints]
+
+full_stage = stage.cut(cuts)
+Part.show(full_stage, "stage")
