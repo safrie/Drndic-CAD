@@ -1,0 +1,66 @@
+import FreeCAD
+import math
+import numpy as np
+from FreeCAD import Base, Part
+
+x = 25.4 # Unit converter from inches to mm for FreeCAD internal processes
+cuts = []
+grid = x/4*3 # Fundamental grid spacing for box
+vec = Base.Vector(grid, 0, 0)
+
+# Basic Box
+boxL = 12.0*x
+boxW = 6.0*x
+boxH = 2.5*x
+boxT = 0.05*x
+boxPoint = Base.Vector(-boxL/2, -boxW/2, -boxH/2)
+box = Part.makeBox(boxL, boxW, boxH, boxPoint)
+
+boxiL = boxL-2*boxT
+boxiW = boxW-2*boxT
+boxiH = boxH-2* boxT
+boxInner = Part.makeBox(boxiL, boxiW, boxiH, boxPoint)
+cuts += [boxInner]
+
+## Binding Posts
+postR = 0.375/2*x
+#post_maxR = 0.35/2*x
+postH = 0.5*x
+postOrigin = Base.Vector(-boxL/2+grid, -boxW/2+grid, (boxH-postH)/2)
+postPoints = [postOrigin + i*vec for i in range(0,15)]
+cuts += [Part.makeCylinder(postR, postH, point) for point in postPoints]
+
+# Triax Bulkheads
+triaxR = 0.4375/2*x
+triax_maxR = 0.270*x
+triaxH = 0.5*x
+triaxOrigin = Base.Vector(-boxL/2+3*grid, -boxW/2+7*grid, (boxH-triaxH)/2)
+triaxPoints = [triaxOrigin + i*vec for i in range(0,6)]
+cuts += [Part.makeCylinder(triaxR, triaxH, point) for point in triaxPoints]
+
+# BNC Bulkheads
+bncR = 0.375/2*x
+bnc_maxR = 0
+bncH = 0.5*x
+bncOrigin = Base.Vector(-boxL/2+10*grid, -boxW/2+7*grid, (boxH-bncH)/2)
+bncPoints = [bncOrigin + i*vec for i in range(0,6)]
+cuts += [Part.makeCylinder(bncR, bncH, point) for point in bncPoints]
+
+# Switches
+switchR = 0.125*x
+switchH = 0.5*x
+	# DPDT
+dpdtOrigin1 = Base.Vector(-boxL/2+3*grid, -boxW/2+3*grid, (boxH-switchH)/2)
+dpdtOrigin2 = Base.Vector(-boxL/2+10*grid, -boxW/2+4*grid, (boxH-switchH)/2)
+dpdtPoints = [dpdtOrigin1 + i*vec for i in range(0, 6)]
+dpdtPoints += [dpdtOrigin2 + i*vec for i in range(0, 6)]
+cuts += [Part.makeCylinder(switchR, switchH, point) for point in dpdtPoints]
+
+	# SPDT
+spdtOrigin = Base.Vector(-boxL/2+3*grid, -boxW/2+5*grid, (boxH-switchH)/2)
+spdtPoints = [spdtOrigin + i*vec for i in range(0, 6)]
+spdtPoints += [Base.Vector(-boxL/2+grid, -boxW/2+4*grid, (boxH-switchH)/2)]
+cuts += [Part.makeCylinder(switchR, switchH, point) for point in spdtPoints]
+
+full_box = box.cut(cuts)
+Part.show(full_box, "breakout box")
